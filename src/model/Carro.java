@@ -24,6 +24,17 @@ public class Carro {
         this.precio = precio;
     }
 
+    public Carro(int id, String marca, String modelo, int anio, String color, String tipoCombustible, String tipoCarroceria, long precio) {
+        this.id = id;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+        this.color = color;
+        this.tipoCombustible = tipoCombustible;
+        this.tipoCarroceria = tipoCarroceria;
+        this.precio = precio;
+    }
+
     public int getId() {
         return id;
     }

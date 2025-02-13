@@ -38,47 +38,49 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                  <Component id="btnGuardar" min="-2" pref="100" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="btnVolver" min="-2" pref="100" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-              </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblMarca" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblModelo" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblAno" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblColor" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblTipoCombustible" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblTipoCarroceria" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lblPrecio" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="txtPrecio" min="-2" pref="200" max="-2" attributes="0"/>
-                              <Component id="txtTipoCombustible" min="-2" pref="200" max="-2" attributes="0"/>
-                              <Component id="txtColor" min="-2" pref="200" max="-2" attributes="0"/>
-                              <Component id="txtAno" min="-2" pref="200" max="-2" attributes="0"/>
-                              <Component id="txtModelo" min="-2" pref="200" max="-2" attributes="0"/>
-                              <Component id="txtMarca" min="-2" pref="200" max="-2" attributes="0"/>
-                              <Component id="txtTipoCarroceria" min="-2" pref="200" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
-                          <Component id="btnSalir" min="-2" pref="100" max="-2" attributes="0"/>
-                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="132" max="-2" attributes="0"/>
                           <Component id="lblNuevoCarro" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
+                              <Component id="btnVolver" min="-2" pref="100" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="139" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblMarca" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblModelo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblAno" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblColor" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblTipoCombustible" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblTipoCarroceria" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblPrecio" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtPrecio" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="txtTipoCombustible" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="txtColor" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="txtAno" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="txtModelo" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="txtMarca" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="txtTipoCarroceria" min="-2" pref="200" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                          <Component id="btnGuardar" min="-2" pref="133" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="btnLimpiar" min="-2" pref="133" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace pref="43" max="32767" attributes="0"/>
+                  <EmptySpace pref="21" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -124,12 +126,12 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnVolver" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
-                      <Component id="btnGuardar" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+                      <Component id="btnGuardar" alignment="3" pref="46" max="32767" attributes="0"/>
+                      <Component id="btnLimpiar" alignment="3" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="btnSalir" min="-2" pref="32" max="-2" attributes="0"/>
-                  <EmptySpace pref="30" max="32767" attributes="0"/>
+                  <Component id="btnVolver" min="-2" pref="32" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -249,15 +251,15 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="btnGuardar">
+        <Component class="javax.swing.JButton" name="btnLimpiar">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Guardar"/>
+            <Property name="text" type="java.lang.String" value="Limpiar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLimpiarActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnVolver">
@@ -271,15 +273,15 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVolverActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnSalir">
+        <Component class="javax.swing.JButton" name="btnGuardar">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Salir"/>
+            <Property name="text" type="java.lang.String" value="Guardar"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalirActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnGuardarActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

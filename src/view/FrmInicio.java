@@ -42,7 +42,6 @@ public class FrmInicio extends javax.swing.JFrame {
 
         btnNuevoCarro.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnNuevoCarro.setText("Nuevo Carro");
-        btnNuevoCarro.setActionCommand("Nuevo Carro");
         btnNuevoCarro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNuevoCarroActionPerformed(evt);
@@ -120,23 +119,38 @@ public class FrmInicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBuscarCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarCarroActionPerformed
-        // TODO add your handling code here:
+        
+        FrmVerCarro verCarro = new FrmVerCarro();
+        verCarro.setLocationRelativeTo(null);//Para que se muestre en el centro
+        verCarro.setVisible(true);
+        this.dispose();//Para que se cierre la ventana
+        
     }//GEN-LAST:event_btnBuscarCarroActionPerformed
 
     private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
-        // TODO add your handling code here:
+        
+        FrmEditarCarro editarCarro = new FrmEditarCarro();
+        editarCarro.setLocationRelativeTo(null);//Para que se muestre en el centro
+        editarCarro.setVisible(true);
+        this.dispose();//Para que se cierre la ventana
+        
     }//GEN-LAST:event_btnEditarActionPerformed
 
     private void btnNuevoCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoCarroActionPerformed
         
         FrmNuevoCarro nuevoCarro = new FrmNuevoCarro();
-        nuevoCarro.setLocationRelativeTo(null);
+        nuevoCarro.setLocationRelativeTo(null);//Para que se muestre en el centro
         nuevoCarro.setVisible(true);
-        this.dispose();
+        this.dispose();//Para que se cierre la ventana
     }//GEN-LAST:event_btnNuevoCarroActionPerformed
 
     private void btnEliminarCarroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarCarroActionPerformed
-        // TODO add your handling code here:
+        
+        FrmEliminarCarro eliminarCarro = new FrmEliminarCarro();
+        eliminarCarro.setLocationRelativeTo(null);//Para que se muestre en el centro
+        eliminarCarro.setVisible(true);
+        this.dispose();//Para que se cierre la ventana
+        
     }//GEN-LAST:event_btnEliminarCarroActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed

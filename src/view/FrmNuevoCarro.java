@@ -1,6 +1,7 @@
 package view;
 
 import controller.CarroDAO;
+import javax.swing.JOptionPane;
 import model.Carro;
 
 public class FrmNuevoCarro extends javax.swing.JFrame {
@@ -29,9 +30,9 @@ public class FrmNuevoCarro extends javax.swing.JFrame {
         txtModelo = new javax.swing.JTextField();
         txtPrecio = new javax.swing.JTextField();
         txtTipoCarroceria = new javax.swing.JTextField();
-        btnGuardar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
-        btnSalir = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,11 +75,11 @@ public class FrmNuevoCarro extends javax.swing.JFrame {
 
         txtTipoCarroceria.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        btnGuardar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnGuardar.setText("Guardar");
-        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+        btnLimpiar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnLimpiar.setText("Limpiar");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarActionPerformed(evt);
+                btnLimpiarActionPerformed(evt);
             }
         });
 
@@ -90,11 +91,11 @@ public class FrmNuevoCarro extends javax.swing.JFrame {
             }
         });
 
-        btnSalir.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnSalir.setText("Salir");
-        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnGuardar.setText("Guardar");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirActionPerformed(evt);
+                btnGuardarActionPerformed(evt);
             }
         });
 
@@ -103,39 +104,40 @@ public class FrmNuevoCarro extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55))
-            .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblMarca)
-                            .addComponent(lblModelo)
-                            .addComponent(lblAno)
-                            .addComponent(lblColor)
-                            .addComponent(lblTipoCombustible)
-                            .addComponent(lblTipoCarroceria)
-                            .addComponent(lblPrecio))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtTipoCombustible, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtAno, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtModelo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtTipoCarroceria, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(150, 150, 150)
-                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(132, 132, 132)
-                        .addComponent(lblNuevoCarro)))
-                .addContainerGap(43, Short.MAX_VALUE))
+                        .addComponent(lblNuevoCarro))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                            .addGap(152, 152, 152)
+                            .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(0, 139, Short.MAX_VALUE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(31, 31, 31)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lblMarca)
+                                .addComponent(lblModelo)
+                                .addComponent(lblAno)
+                                .addComponent(lblColor)
+                                .addComponent(lblTipoCombustible)
+                                .addComponent(lblTipoCarroceria)
+                                .addComponent(lblPrecio))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtTipoCombustible, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtColor, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtAno, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtModelo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtTipoCarroceria, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
+                        .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -172,11 +174,11 @@ public class FrmNuevoCarro extends javax.swing.JFrame {
                     .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+                    .addComponent(btnLimpiar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -193,43 +195,59 @@ public class FrmNuevoCarro extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        String marca = this.txtMarca.getText();
-        String modelo = this.txtModelo.getText();
-        int anio = Integer.parseInt(this.txtAno.getText());
-        String color = this.txtColor.getText();
-        String tipoCombustible = this.txtTipoCombustible.getText();
-        String tipoCarroceria = this.txtTipoCarroceria.getText();
-        int precio = Integer.parseInt(this.txtPrecio.getText());
+    private void btnLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpiarActionPerformed
         
-        //Se crea el objeto carro
-        Carro carro = new Carro (marca, modelo, anio, color, tipoCombustible, tipoCarroceria, precio);
-        //Se crea el objeto libroDAO
-        CarroDAO carroDAO = new CarroDAO();
-        //Se llama el método para insertar pasando el objeto libro
-        carroDAO.insertLibro(carro);
-        
-    }//GEN-LAST:event_btnGuardarActionPerformed
+        txtMarca.setText("");
+        txtModelo.setText("");
+        txtAno.setText("");
+        txtColor.setText("");
+        txtTipoCombustible.setText("");
+        txtTipoCarroceria.setText("");
+        txtPrecio.setText("");
+       
+    }//GEN-LAST:event_btnLimpiarActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
         
         FrmInicio nuevo = new FrmInicio();
-        nuevo.setLocationRelativeTo(null);
+        nuevo.setLocationRelativeTo(null);//Para que se muestre en el centro
         nuevo.setVisible(true);
-        this.dispose();
+        this.dispose(); //Para que se cierre la ventana
         
     }//GEN-LAST:event_btnVolverActionPerformed
 
-    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
-
-        System.exit(0);
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         
-    }//GEN-LAST:event_btnSalirActionPerformed
+        try {
+            
+                String marca = this.txtMarca.getText();
+                String modelo = this.txtModelo.getText();
+                int anio = Integer.parseInt(this.txtAno.getText());
+                String color = this.txtColor.getText();
+                String tipoCombustible = this.txtTipoCombustible.getText();
+                String tipoCarroceria = this.txtTipoCarroceria.getText();
+                int precio = Integer.parseInt(this.txtPrecio.getText());
 
+                //Se crea el objeto carro
+                Carro carro = new Carro (marca, modelo, anio, color, tipoCombustible, tipoCarroceria, precio);
+                //Se crea el objeto libroDAO
+                CarroDAO carroDAO = new CarroDAO();
+                //Se llama el método para insertar pasando el objeto libro
+                carroDAO.nuevoCarro(carro);
+            
+            } catch (NumberFormatException ex) {
+                // Manejar el caso en que el ID no sea un número válido
+                JOptionPane.showMessageDialog(this, "Por favor, ingrese todos los campos.", "Error", JOptionPane.ERROR_MESSAGE);
+            } catch (Exception ex) {
+                // Manejar otros errores
+                JOptionPane.showMessageDialog(this, "Error al guardar el carro: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
-    private javax.swing.JButton btnSalir;
+    private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnVolver;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblAno;
